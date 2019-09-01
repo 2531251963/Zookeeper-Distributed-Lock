@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="三种分布式锁" />
-        <module name="基于注解的分布式锁" />
+        <module name="封装分布式锁" />
       </profile>
     </annotationProcessing>
   </component>

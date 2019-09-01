@@ -3,9 +3,9 @@ package dislock;
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.Stat;
 
-import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -30,16 +30,20 @@ public class Zookeeper_3_FairLock {
     private CountDownLatch countDownLatch=new CountDownLatch(1);
 
     public Zookeeper_3_FairLock(){
+        CountDownLatch countDownLatch=new CountDownLatch(1);
         try {
             zk = new ZooKeeper(zkconfig, 6000, new Watcher() {
                 @Override
                 public void process(WatchedEvent watchedEvent) {
                     System.out.println("Receive event "+watchedEvent);
-                    if(Event.KeeperState.SyncConnected == watchedEvent.getState())
+                    if(Event.KeeperState.SyncConnected == watchedEvent.getState()) {
                         System.out.println("connection is ok");
+                        countDownLatch.countDown();
+                    }
                 }
             });
-        } catch (IOException e) {
+            countDownLatch.await();
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -75,7 +79,7 @@ public class Zookeeper_3_FairLock {
                     }
                 }
             }
-            System.out.println(watchNode);
+            System.out.println(path+" 监听 ->"+watchNode);
             if (watchNode!=null){
                 Stat stat = zk.exists(lockName + "/" + watchNode,new Watcher() {
                     @Override
@@ -83,7 +87,7 @@ public class Zookeeper_3_FairLock {
                         if(watchedEvent.getType() == Event.EventType.NodeDeleted){
                             System.out.println("delete事件来了");
                             countDownLatch.countDown();
-                            System.out.println("打断当前线程");
+                            System.out.println("唤醒当前线程");
                         }
                     }
                 });
@@ -113,22 +117,32 @@ public class Zookeeper_3_FairLock {
         }
     }
 
+static CountDownLatch downLatch=new CountDownLatch(1);
 
-
-    public static void main(String args[]) throws InterruptedException {
-        ExecutorService service = Executors.newFixedThreadPool(10);
-        for (int i = 0;i<3;i++){
+    public static void main(String args[]) throws Exception {
+        ExecutorService service = Executors.newFixedThreadPool(300);
+        for (int i = 0;i<30;i++){
             service.execute(()-> {
                 Zookeeper_3_FairLock test = new Zookeeper_3_FairLock();
                 try {
+                    downLatch.await();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                long start=System.currentTimeMillis();
+                try {
                     test.lock();
-                    Thread.sleep(3000);
+                    Thread.sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 test.unlock();
+                System.out.println(System.currentTimeMillis()-start);
             });
         }
+        Scanner scanner=new Scanner(System.in);
+        scanner.next();
+        downLatch.countDown();
         service.shutdown();
     }
 

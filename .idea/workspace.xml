@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09b00867-d27b-489a-81f0-5bffde5b2c6a" name="Default Changelist" comment="" />
+    <list default="true" id="09b00867-d27b-489a-81f0-5bffde5b2c6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/封装分布式锁/src/main/java/org/easyarch/zk_distributedLock/ZkDistributedLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/三种分布式锁/src/main/java/dislock/Zookeeper_3_FairLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/三种分布式锁/src/main/java/dislock/Zookeeper_3_FairLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基于注解的分布式锁/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/封装分布式锁/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/三种分布式锁/target/" />
     <ignored path="$PROJECT_DIR$/基于注解的分布式锁/target/" />
+    <ignored path="$PROJECT_DIR$/封装分布式锁/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +94,44 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-589913377">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="5" />
+          <entry key="html" value="1" />
+          <entry key="java" value="17" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="5" />
+          <entry key="HTML" value="1" />
+          <entry key="JAVA" value="17" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="22" />
+          <entry key="java" value="804" />
+          <entry key="xml" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="804" />
+          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="XML" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="zookeeper分布式锁" />
@@ -92,10 +139,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/基于注解的分布式锁/pom.xml">
+        <entry file="file://$PROJECT_DIR$/封装分布式锁/src/main/java/org/easyarch/zk_distributedLock/ZkDistributedLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="300">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/三种分布式锁/src/main/java/dislock/Zookeeper_3_FairLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -105,9 +176,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -117,10 +192,15 @@
         <option value="$PROJECT_DIR$/src/main/java/baseopt/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/dislock/DisLock_1.java" />
         <option value="$PROJECT_DIR$/src/main/java/dislock/Zookeeper_3_FairLock.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/三种分布式锁/pom.xml" />
         <option value="$PROJECT_DIR$/三种分布式锁/src/main/java/dislock/DisLock_1.java" />
         <option value="$PROJECT_DIR$/基于注解的分布式锁/pom.xml" />
+        <option value="$PROJECT_DIR$/基于注解的分布式锁/src/main.html" />
+        <option value="$PROJECT_DIR$/基于注解的分布式锁/src/main/java/a/A.java" />
+        <option value="$PROJECT_DIR$/三种分布式锁/src/main/java/dislock/Zookeeper_3_FairLock.java" />
+        <option value="$PROJECT_DIR$/封装分布式锁/src/main/java/org/easyarch/zk_distributedLock/A.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/封装分布式锁/src/main/java/org/easyarch/zk_distributedLock/ZkDistributedLock.java" />
       </list>
     </option>
   </component>
@@ -147,42 +227,34 @@
     <option name="width" value="1579" />
     <option name="height" value="966" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="zookeeper分布式锁" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeper分布式锁" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zookeeper分布式锁" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeper分布式锁" type="462c0819:PsiDirectoryNode" />
-              <item name="三种分布式锁" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zookeeper分布式锁" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeper分布式锁" type="462c0819:PsiDirectoryNode" />
-              <item name="基于注解的分布式锁" type="462c0819:PsiDirectoryNode" />
+              <item name="Zookeeper-Distributed-Lock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zookeeper-Distributed-Lock" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567266930425" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zkDemo/pom.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567340270489" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -207,13 +279,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="DisLock_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dislock.DisLock_1" />
-      <module name="zookeeper分布式锁" />
+  <component name="RunManager">
+    <configuration name="ZkDistributedLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.easyarch.zk_distributedLock.ZkDistributedLock" />
+      <module name="封装分布式锁" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dislock.*" />
+          <option name="PATTERN" value="org.easyarch.zk_distributedLock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -221,57 +293,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baseopt.Test" />
-      <module name="zookeeper分布式锁" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="baseopt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Zookeeper_2_Watcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dislock.Zookeeper_2_Watcher" />
-      <module name="zookeeper分布式锁" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dislock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Zookeeper_3_FairLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dislock.Zookeeper_3_FairLock" />
-      <module name="zookeeper分布式锁" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dislock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.DisLock_1" />
-      <item itemvalue="Application.Zookeeper_2_Watcher" />
-      <item itemvalue="Application.Zookeeper_3_FairLock" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Zookeeper_3_FairLock" />
-        <item itemvalue="Application.Zookeeper_2_Watcher" />
-        <item itemvalue="Application.DisLock_1" />
+        <item itemvalue="Application.ZkDistributedLock" />
       </list>
     </recent_temporary>
   </component>
@@ -293,36 +317,36 @@
       <workItem from="1567069840954" duration="68000" />
       <workItem from="1567134790897" duration="3601000" />
       <workItem from="1567260735548" duration="2125000" />
+      <workItem from="1567331197034" duration="6026000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31334000" />
+    <option name="totallyTimeSpent" value="37360000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.491684" visible="true" weight="0.13791268" />
-      <window_info id="Structure" order="1" sideWeight="0.508316" side_tool="true" visible="true" weight="0.13791268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49064448" visible="true" weight="0.13897763" />
+      <window_info id="Structure" order="1" sideWeight="0.508845" side_tool="true" weight="0.13897763" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5010395" side_tool="true" weight="0.15921193" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43555093" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.47713098" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298647" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34547347" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47658688" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Tail" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32952183" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32882413" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -368,13 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.5.4-beta/zookeeper-3.5.4-beta.jar!/org/apache/zookeeper/ZooKeeper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="254" column="18" selection-start-line="254" selection-start-column="18" selection-end-line="254" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.5.4-beta/zookeeper-3.5.4-beta.jar!/org/apache/zookeeper/WatchedEvent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -384,13 +401,6 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../jdk/src.zip!/java/util/concurrent/ConcurrentHashMap.java" />
     <entry file="jar://$PROJECT_DIR$/../../jdk/src.zip!/java/util/HashMap.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.5.4-beta/zookeeper-3.5.4-beta.jar!/org/apache/zookeeper/Watcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.5.4-beta/zookeeper-3.5.4-beta.jar!/org/apache/zookeeper/ZooDefs.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -408,30 +418,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/三种分布式锁/src/main/java/baseopt/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/三种分布式锁/src/main/java/baseopt/Test.java" />
     <entry file="file://$PROJECT_DIR$/三种分布式锁/src/main/java/baseopt/BaseZookeeper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-468">
           <caret line="115" column="19" lean-forward="true" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/三种分布式锁/src/main/java/dislock/Zookeeper_3_FairLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-771">
-          <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -452,17 +443,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/基于注解的分布式锁/src/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="120">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/基于注解的分布式锁/pom.xml">
+    <entry file="jar://$PROJECT_DIR$/../../../jdk/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="201">
+          <caret line="294" column="29" selection-start-line="294" selection-start-column="29" selection-end-line="294" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../jdk/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="139" column="57" selection-start-line="139" selection-start-column="57" selection-end-line="139" selection-end-column="57" />
+          <folding>
+            <element signature="e#5644#5645#0" expanded="true" />
+            <element signature="e#5675#5676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../jdk/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="788" column="29" selection-start-line="788" selection-start-column="29" selection-end-line="788" selection-end-column="29" />
+          <folding>
+            <element signature="e#10280#10281#0" expanded="true" />
+            <element signature="e#10314#10315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../jdk/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="53" column="10" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+          <folding>
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../jdk/src.zip!/java/lang/RuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+          <folding>
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../jdk/src.zip!/java/lang/IndexOutOfBoundsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+          <folding>
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../jdk/javafx-src.zip!/javafx/collections/transformation/FilteredList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="169" column="33" lean-forward="true" selection-start-line="169" selection-start-column="33" selection-end-line="169" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../jdk/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../jdk/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="633" column="30" selection-start-line="633" selection-start-column="30" selection-end-line="633" selection-end-column="30" />
+          <folding>
+            <element signature="e#23112#23113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/封装分布式锁/src/main/java/org/easyarch/zk_distributedLock/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.5.4-beta/zookeeper-3.5.4-beta.jar!/org/apache/zookeeper/Watcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/封装分布式锁/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
           <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.5.4-beta/zookeeper-3.5.4-beta.jar!/org/apache/zookeeper/ZooKeeper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="254" column="18" selection-start-line="254" selection-start-column="18" selection-end-line="254" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/三种分布式锁/src/main/java/dislock/Zookeeper_3_FairLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/封装分布式锁/src/main/java/org/easyarch/zk_distributedLock/ZkDistributedLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

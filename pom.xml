@@ -22,7 +22,7 @@
     </build>
     <modules>
         <module>三种分布式锁</module>
-        <module>基于注解的分布式锁</module>
+        <module>封装分布式锁</module>
     </modules>
 
 
